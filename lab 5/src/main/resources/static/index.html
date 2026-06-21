@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bookservice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb bg-orb--one" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb--two" aria-hidden="true"></div>
+
+    <main class="page">
+      <header class="hero">
+        <div class="hero__text">
+          <p class="eyebrow">Spring Boot REST</p>
+          <h1 class="title">Bookservice</h1>
+          <p class="subtitle">
+            A clean, fast JSON API for your library. Built with Spring Boot, JPA, and
+            Java 21.
+          </p>
+          <div class="hero__actions">
+            <a class="btn" href="/api/books">Open API</a>
+            <a class="btn btn--ghost" href="/api/books" target="_blank" rel="noreferrer">
+              View in new tab
+            </a>
+          </div>
+        </div>
+        <div class="hero__panel">
+          <div class="panel">
+            <p class="panel__title">Quick endpoints</p>
+            <div class="panel__list">
+              <div class="panel__row">
+                <span class="method method--get">GET</span>
+                <span class="path">/api/books</span>
+              </div>
+              <div class="panel__row">
+                <span class="method method--get">GET</span>
+                <span class="path">/api/books/{id}</span>
+              </div>
+              <div class="panel__row">
+                <span class="method method--post">POST</span>
+                <span class="path">/api/books</span>
+              </div>
+              <div class="panel__row">
+                <span class="method method--put">PUT</span>
+                <span class="path">/api/books/{id}</span>
+              </div>
+              <div class="panel__row">
+                <span class="method method--delete">DELETE</span>
+                <span class="path">/api/books/{id}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="grid" aria-label="Service highlights">
+        <article class="card">
+          <h2>Fast CRUD</h2>
+          <p>Lean endpoints for list, create, update, and delete operations.</p>
+        </article>
+        <article class="card">
+          <h2>Clean JSON</h2>
+          <p>Simple payloads that are easy to consume and extend.</p>
+        </article>
+        <article class="card">
+          <h2>Ready for UI</h2>
+          <p>Use this landing page as a jumping point for a future frontend.</p>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <span>Bookservice API</span>
+        <span class="footer__dot"></span>
+        <span>Running on Java 21</span>
+      </footer>
+    </main>
+  </body>
+</html>
